@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    flex: none;
+    display:flex;
+    flex-direction: column;
+    background-color: cyan;
+    /* padding: 10px; */
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    
+}
+
+.navBar{
+    flex: none;
+    background-color: grey;
+}
+
+.navBarlist li{
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    color: white;
+    padding: 20px;
+}
+
+/* main has two div with ratio 1:2 */
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* left div */
+.left{
+    display:flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    flex:1;
+    min-width: 200px;
+    padding: 10px;
+}
+/* right div */
+.right{
+    background-color: white;
+    flex:2;
+    padding: 10px;
+    min-width: 300px;
+}
+
+
+.imageBox{
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: grey;
+    height: 150px;
+}
+
+.imageBoxContainer{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+
+.imageBoxContainer .imageBox{
+    display: flex;
+    box-sizing: border-box;
+    background-color: grey;
+    height: 80px;
+    align-items: center;
+}
+
+
+.footer{
+    display: flex;
+    background-color: #DEDADC;
+    width: 100vw;
+    align-items:center;
+    justify-content:center;
+    padding: 20px 0;
+
+    flex: none;
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Sans-serif;
+}
+.header{
+    flex:none;
+    background-color: black;
+    padding: 10px 100px;
+    color: white;
+}
+.navBar{
+    flex: none;
+    background-color: black;
+    color: white;
+}
+.navBarList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navBarList li{
+    display: inline;
+    list-style-type: none;
+    padding: 10px 5%;
+    margin: 0;
+    color: white;
+}
+.navBarList li a{
+    color: white;
+    text-decoration: none;
+}
+.main{
+    flex: 1;
+    background-color: white;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: row;
+}
+.footer{
+    flex: none;
+    background-color: black;
+    color: white;
+    padding: 10px 100px;;
+}
+
+.card{
+    display: flex;
+    width: 20%;
+    height: 370px;
+    flex-direction: column;
+    border: 1px solid black;
+    /* padding: 10px; */
+}
+.card .cardImage img{
+    width: 100%;
+}
+.card .cardContent{
+    padding: 0 10px;
+}
+.card .cardContent .date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+    color: gray;
+}
+.card .cardContent #cardTitle{
+    font-size: 20px;
+    color: black;
+}
+.card .cardContent #cardInfo{
+    height: 30px;
+    overflow-y: hidden;
+    font-size: 10px;
+    color: gray;
+}
+.card .cardFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    color: gray;
+}
+
+.card .cardFooter img{
+    width: 20px;
+    height: 20px;
+    padding: 0 0 8px 0;
+}
+.card .cardFooter .likesCounter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 63px;
+}
