@@ -1,20 +1,31 @@
 import React from 'react';
-import Header from './components/Header/header';
-import Footer from './components/Footer/footer';
-import Navbar from './components/Navbar/navBar';
-import MainBody from './components/MainBody/mainBody';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import BlogPage from './pages/BlogPage/index';
+import Error from './pages/Error/index';
+import PageNotFound from './pages/PageNotFound/index';
+import { BlogPostProvider } from './contexts/blogPostContext';
+
+//import pages
+
+//const root = ReactDom.createRoot(document.getElementById('root') as HTMLElement);
 
 function App() {
   return (
-    <div>
-      <div className="body">
-        <Header />
-        <Navbar />
-        <MainBody />
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <BlogPostProvider>
+              <BlogPage />
+            </BlogPostProvider>
+          }
+        />
+        <Route path='/error/:statusCode?' element={<Error />} />
+        <Route path='*' element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

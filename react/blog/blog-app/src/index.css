@@ -56,8 +56,9 @@
 
 .card{
   border: 1px solid black;
-  width: 220px;
+  width: 250px;
   height: 370px;
+  margin: 10px;
   flex-direction: column;
 }
 
