@@ -1,0 +1,28 @@
+.GenereFilter{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.genreSelector{
+    width: 200px;
+    border: 1px solid #ccc;
+    background-color: #4C63AA;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+}
+
+.filterContainer{
+    position: relative;
+    height: 135px;
+}
+.filterContainer .genreImg{
+    position: absolute;
+}
+.filterContainer .genreSelector{
+    position: absolute;
+    top: 53px;
+    left: 111px;
+}

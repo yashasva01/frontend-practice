@@ -1,0 +1,14 @@
+.filterByGenre #allsongs{
+    font-size: 80px;
+    font-weight: 220;
+    color: black;
+}
+
+.songCardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 20px;
+    /* align-items: center; */
+  }
